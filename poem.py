@@ -1,3 +1,4 @@
+import random
 """returns the lines inside the txt file"""
 def get_file_lines(filename):
     poem_file = "/Users/merissabridgeman/dev/courses/CS 1.0/poetry/poem.txt" # opens file
@@ -15,3 +16,11 @@ def lines_printed_backwards(lines_list):
     for line in range(len(lines_list)):
         reverse = str(num_lines - line) + " " + lines_list[line] #beginning reverses the line numbers
         print (reverse)
+
+"""prints the lines of the poem in random order"""
+def random_list(lines_list):
+   lines_list = open('/Users/merissabridgeman/dev/courses/CS 1.0/poetry/poem.txt').readlines()
+   for line in lines_list:
+        line = random.randrange(len(lines_list))
+        random_order = str(line + 1)+ " " + lines_list[line]
+        print (random_order)
