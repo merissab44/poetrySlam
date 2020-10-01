@@ -27,7 +27,7 @@ def random_list(lines_list):
         print (random_order)
         
 """will print the lines in a custom order"""
-def even_odd_lines(lines_list):
+def even_lines(lines_list):
    lines_list = open('/Users/merissabridgeman/dev/courses/CS 1.0/poetry/poem.txt').readlines()
       lines_list = open('/Users/merissabridgeman/dev/courses/CS 1.0/poetry/poem.txt').readlines()
    for i in range(len(lines_list)):
@@ -43,5 +43,5 @@ if choice == "1":
 elif choice == "2":
    random_list("poem.txt")
 elif choice == "3":
-   even_odd_lines("poem.txt")
-
+   even_lines("poem.txt")
+ 
