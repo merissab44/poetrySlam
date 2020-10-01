@@ -16,6 +16,7 @@ def lines_printed_backwards(lines_list):
     for line in range(len(lines_list)):
         reverse = str(num_lines - line) + " " + lines_list[line] #beginning reverses the line numbers
         print (reverse)
+    lines_list.close()
 
 """prints the lines of the poem in random order"""
 def random_list(lines_list):
@@ -24,6 +25,7 @@ def random_list(lines_list):
         line = random.randrange(len(lines_list))
         random_order = str(line + 1)+ " " + lines_list[line]
         print (random_order)
+   lines_list.close()
         
 """will print the lines in a custom order"""
 def even_odd_lines(lines_list):
@@ -34,4 +36,5 @@ def even_odd_lines(lines_list):
        if i % 2 == 0:
           print (line)
        i += 1
+   lines_list.close()
 
