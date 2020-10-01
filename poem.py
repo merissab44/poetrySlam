@@ -46,4 +46,3 @@ elif choice == "2":
 elif choice == "3":
    even_odd_lines("poem.txt")
 
-
