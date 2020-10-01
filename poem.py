@@ -24,3 +24,14 @@ def random_list(lines_list):
         line = random.randrange(len(lines_list))
         random_order = str(line + 1)+ " " + lines_list[line]
         print (random_order)
+        
+"""will print the lines in a custom order"""
+def even_odd_lines(lines_list):
+   lines_list = open('/Users/merissabridgeman/dev/courses/CS 1.0/poetry/poem.txt').readlines()
+   print("you're in the custom function")
+  
+   for line in lines_list:
+       if i % 2 == 0:
+          print (line)
+       i += 1
+
