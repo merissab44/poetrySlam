@@ -1,4 +1,4 @@
-# poetrySlam
+# StillIRise
 
 Welcome to my poetry Slam Project! 
 
