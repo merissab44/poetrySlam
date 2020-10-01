@@ -1,4 +1,5 @@
 import random
+from random import choice
 """returns the lines inside the txt file"""
 def get_file_lines(filename):
     poem_file = "/Users/merissabridgeman/dev/courses/CS 1.0/poetry/poem.txt" # opens file
@@ -37,4 +38,16 @@ def even_odd_lines(lines_list):
           print (line)
        i += 1
    lines_list.close()
+
+choice = input(""" Please enter from the options below:
+               1: read poem backwards
+               2: read poem randomly
+               3: read even lines then odd """)
+if choice == "1":
+   print(lines_printed_backwards("poem.txt"))
+elif choice == "2":
+   random_list("poem.txt")
+elif choice == "3":
+   even_odd_lines("poem.txt")
+
 
